@@ -1,0 +1,23 @@
+.chapter {
+  padding: 20px;
+  &__title {
+    font-family: Arial;
+    font-size: 21px;
+    font-weight: bold;
+  }
+  &__content {
+    margin-top: 10px;
+  }
+  
+  &__section {
+    margin-top: 30px;
+    &-title {
+      color: #666;
+      font-size: 18px;
+    }
+    &-content {
+      margin-top: 15px;
+      padding: 0 10px;
+    }
+  }
+}

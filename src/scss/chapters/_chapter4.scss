@@ -1,0 +1,9 @@
+.user-details {
+  padding: 10px 0;
+  &__title {
+    font-weight: bold;
+  }
+  &__title, &__field {
+    margin-top: 10px;
+  }
+}

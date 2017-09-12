@@ -1,0 +1,93 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  } 
+  &:after {
+    clear: both;
+  }
+}
+
+.root {
+  &__content {
+    width: 1024px;
+    margin: auto;
+  }
+  &__route {
+    &-menu {
+      float: left;
+      width: 240px;
+    }
+    &-content {
+      float: left;
+      width: 680px;
+    }
+    &-nav {
+      padding: 5px 10px;
+      &-prev, &-next {
+        padding: 5px 10px;
+        color: $black;
+        background: $grey-2;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover, &:active {
+          color: $blue-8;
+          background: $grey-3;
+          text-decoration: none;
+        }
+      }
+      &-prev {
+        float: left;
+      }
+      &-next {
+        float: right;
+      }
+    }
+  }
+}
+
+.chapters-menu {
+  background: $grey-1;
+}
+
+.chapters-item {
+  display: block;
+  padding: 20px 10px;
+  color: $black;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover, &:active {
+    background: $grey-2;
+    text-decoration: none;
+  }
+  &--active {
+    background: $grey-3;
+  }
+  &__title {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  &__subtitle {
+    margin: 10px 0 0 10px;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  &:hover, &:active {
+    .chapters-item {
+      &__title, &__subtitle {
+        text-decoration: none;
+      }
+    }
+  }
+}

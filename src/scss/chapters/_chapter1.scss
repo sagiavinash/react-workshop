@@ -1,0 +1,8 @@
+.chapter-1 {
+  .button + .button {
+    margin-left: 10px;
+  }
+  .button-group + .button-group {
+    margin-top: 10px;
+  } 
+}
